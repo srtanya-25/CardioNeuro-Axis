@@ -1,0 +1,120 @@
+{
+  "total_columns": 52,
+  "total_exclusions": 30,
+  "exclusion_list": [
+    "ADDEPEV3",
+    "AGE_GROUP",
+    "AGE_LIPID_INTERACTION",
+    "AGE_RISK_GROUP_ELDERLY",
+    "AGE_RISK_GROUP_MIDDLE_AGE",
+    "BMI",
+    "BMI_A1C_INTERACTION",
+    "BMI_CATEGORY",
+    "BMI_LIPID_INTERACTION",
+    "BMI_RISK_GROUP_NORMAL",
+    "BMI_RISK_GROUP_OBESE",
+    "BMI_RISK_GROUP_OVERWEIGHT",
+    "BMI_TREND",
+    "BPHIGH6",
+    "CHCKDNY2",
+    "COGNITIVE_AGE_RISK",
+    "CVDINFR4",
+    "CVDSTRK3",
+    "DIABETE4",
+    "GENHLTH",
+    "HEALTH_RISK_GROUP_HIGH_RISK",
+    "HEALTH_RISK_GROUP_MODERATE_RISK",
+    "MENTHLTH",
+    "MMSE_DECLINE",
+    "MMSE_PROXY",
+    "MMSE_STD",
+    "_BMI5",
+    "_BMI5CAT",
+    "_LLCPWT",
+    "_STATE"
+  ],
+  "suspicious_by_target": {
+    "TARGET_HYPERLIPIDEMIA": [
+      "AGE_LIPID_INTERACTION",
+      "BMI_LIPID_INTERACTION",
+      "BMI_LIPID_INTERACTION"
+    ],
+    "TARGET_AD_VAD": [
+      "MMSE_PROXY",
+      "MMSE_STD",
+      "MMSE_DECLINE",
+      "COGNITIVE_AGE_RISK",
+      "MMSE_PROXY",
+      "MMSE_STD",
+      "MMSE_DECLINE"
+    ],
+    "TARGET_PD": [
+      "MMSE_PROXY",
+      "MMSE_STD",
+      "MMSE_DECLINE",
+      "MMSE_PROXY",
+      "MMSE_STD",
+      "MMSE_DECLINE"
+    ],
+    "TARGET_OBESITY": [
+      "BMI_LIPID_INTERACTION",
+      "_BMI5",
+      "BMI_TREND",
+      "BMI_A1C_INTERACTION",
+      "BMI_LIPID_INTERACTION",
+      "BMI_RISK_GROUP_NORMAL",
+      "BMI_RISK_GROUP_OVERWEIGHT",
+      "BMI_RISK_GROUP_OBESE"
+    ]
+  },
+  "risk_group_features": [
+    "AGE_GROUP",
+    "COGNITIVE_AGE_RISK",
+    "HEALTH_RISK_GROUP_MODERATE_RISK",
+    "HEALTH_RISK_GROUP_HIGH_RISK",
+    "AGE_RISK_GROUP_MIDDLE_AGE",
+    "AGE_RISK_GROUP_ELDERLY",
+    "BMI_RISK_GROUP_NORMAL",
+    "BMI_RISK_GROUP_OVERWEIGHT",
+    "BMI_RISK_GROUP_OBESE"
+  ],
+  "feature_prefixes": {
+    "": [
+      "_STATE",
+      "_BMI5",
+      "_LLCPWT"
+    ],
+    "AGE": [
+      "AGE_GROUP",
+      "AGE_A1C_INTERACTION",
+      "AGE_LIPID_INTERACTION",
+      "AGE_RISK_GROUP_MIDDLE_AGE",
+      "AGE_RISK_GROUP_ELDERLY"
+    ],
+    "AVG": [
+      "AVG_A1C",
+      "AVG_ALB_CR_RATIO",
+      "AVG_GLUCOSE",
+      "AVG_HDL",
+      "AVG_LDL",
+      "AVG_TRIGLYCERIDES"
+    ],
+    "MMSE": [
+      "MMSE_PROXY",
+      "MMSE_STD",
+      "MMSE_DECLINE"
+    ],
+    "BMI": [
+      "BMI_TREND",
+      "BMI_A1C_INTERACTION",
+      "BMI_LIPID_INTERACTION",
+      "BMI_RISK_GROUP_NORMAL",
+      "BMI_RISK_GROUP_OVERWEIGHT",
+      "BMI_RISK_GROUP_OBESE"
+    ],
+    "HEALTH": [
+      "HEALTH_RISK_GROUP_MODERATE_RISK",
+      "HEALTH_RISK_GROUP_HIGH_RISK"
+    ]
+  }
+}

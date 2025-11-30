@@ -1,0 +1,38 @@
+{
+  "perfect_score_targets": [
+    "TARGET_HYPERLIPIDEMIA",
+    "TARGET_AD_VAD",
+    "TARGET_PD",
+    "TARGET_OBESITY"
+  ],
+  "suspicious_targets": [
+    "TARGET_MDD",
+    "TARGET_EPILEPSY",
+    "TARGET_AFIB"
+  ],
+  "leaking_features_by_target": {
+    "TARGET_PD": [
+      "MMSE_STD"
+    ]
+  },
+  "all_leaking_features": [
+    "MMSE_STD"
+  ],
+  "recommended_exclusions": [
+    "ADDEPEV3",
+    "BMI",
+    "BMI_CATEGORY",
+    "BPHIGH6",
+    "CHCKDNY2",
+    "CVDINFR4",
+    "CVDSTRK3",
+    "DIABETE4",
+    "GENHLTH",
+    "MENTHLTH",
+    "MMSE_STD",
+    "_BMI5",
+    "_BMI5CAT",
+    "_LLCPWT",
+    "_STATE"
+  ]
+}
